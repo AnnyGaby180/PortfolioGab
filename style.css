@@ -1,0 +1,355 @@
+/* Estilos gerais */
+body {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: local;
+    background-image: url(imagens/partitura\ e\ violino.jpg);
+}
+
+/* Aplicando a opacidade somente ao fundo */
+body::after {
+    content: "";
+    background-image: url(imagens/projeto2.jpeg);
+    opacity: 0.5; /* Defina o valor de opacidade desejado */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    background-color: #242424;
+}
+
+header {
+    background-color: #242424;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+section {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.project {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border-radius: 15px;
+}
+
+.Lana {
+    max-width: 100%;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    max-width: 100%;
+}
+
+.project-details {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-details button {
+    background-color: #242424;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #242424;
+    color: #eaeaea;
+}
+
+img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+/* Estilos para a seção "Profissão" */
+.inicio .titulo-inicio {
+    animation: pulo 2s infinite alternate;
+    
+}
+
+.inicio {
+
+    background-size: 0cqmax;
+    background-position: center bottom;
+    color: #f6f6f6;
+    padding: 250px 0;
+    position: center;
+    font-family: "Courier New", Courier, monospace;
+    border-radius: 15px;
+    background: transparent;
+}
+
+.titulo-inicio {
+    font-size: 100px;
+    text-transform: uppercase;
+    background: rgba(197, 0, 0, 0.5);
+    padding: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    margin-top: -200px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.titulo-inicio::after {
+    content: "Cineasta, musicista, escritora e atriz amadora";
+    display: block;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+/* Estilos para a imagem flutuante */
+.flutuante {
+    animation: pulo 2s infinite alternate;
+    left: 100%;
+}
+
+@keyframes pulo {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.carousel-container {
+    text-align: center;
+    padding: 0;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: slide 20s linear infinite;
+}
+
+.carousel img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%); /* Inicie a partir da direita */
+    }
+    100% {
+        transform: translateX(-100%); /* Mova para a esquerda para fora da tela */
+    }
+}
+
+
+/* Adicione ao seu CSS */
+
+.overlay {
+    /* Estilos para o fundo escuro ao abrir a galeria */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.close {
+    /* Estilos para o botão de fechar */
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.zoomed-image {
+    /* Estilos para a imagem ampliada */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.prev, .next {
+    /* Estilos para as setas de navegação */
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+
+
+
+.sobre-texto {
+    opacity: 0; /* Comece com a opacidade 0 para esconder o texto */
+    animation: fadeIn 2s forwards; /* Animação com duração de 2 segundos */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Ao final da animação, a opacidade será 1, tornando o texto visível */
+    }
+}
+
+/* Estilos para a seção "portfolio" */
+.portfolio {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.portfolio-details h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* Adicione isso ao seu arquivo style.css */
+.merosdetalhes-extra {
+    display: none;
+}
+
+
+.video-link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.video-link-button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.certificados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 200vh; /* Isso garante que as imagens ocupem a altura total da janela de exibição */
+}
+
+.certificado-image {
+    max-width: 100%;
+    height: auto;
+    /* Aumente a largura e a altura como desejado */
+    width: 600px; /* Largura desejada */
+    height: 400px; /* Altura desejada */
+    margin: 10px; /* Espaçamento entre as imagens */
+    display: inline-block;
+}
+
+.iniciofim {
+    max-width: 50%;
+    border-radius: 10%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.voltar {
+    background-color: #0056b3;
+;
+}

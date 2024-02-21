@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <a href="roteiros.html"></a>
+    <a href="certificados.html"></a>
+
+    <title>Seu Portfólio</title>
+</head>
+<body class="background-image">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="roteiros.html">Roteiros</a></li>
+                <li><a href="certificados.html">Certificados</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="inicio" class="inicio">
+      <h1 class="titulo-inicio">Mika</h1>
+    </section>
+
+    <div id="imagem-dinamica" class="carousel-container">
+        <div class="carousel">
+            <!-- Suas imagens aqui -->
+        </div>
+    </div>
+</section>
+
+<div id="imagem-dinamica" class="carousel-container">
+    <div class="carousel">
+        <img src="imagens/projeto2.jpeg" alt="Imagem 1">
+        <img src="imagens/WhatsApp Image 2023-10-18 at 18.04.50.jpeg" alt="Imagem 3">
+        <img src="imagens/gabicamera.jpg" alt="Imagem 3">
+        <img src="imagens/gabimascara.jpeg" alt="Imagem 3">
+        <hr>
+        <img src="imagens/gabieeeeeeed4.jpeg" alt="Imagem 3">
+        <img src="imagens/gabiiii.jpeg" alt="Imagem 3">
+
+    </div>
+</section>
+</div>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p class="sobre-texto">Atuante em diversas áreas artísticas desde a adolescência. Sou bacharela em Cinema e Audiovisual pelo Instituto Federal de Goiás - Cidade de Goiás, formada em 2022. Musicista (flauta transversal, violoncelo, violão e teclado), escritora e atriz amadora. Trabalhando com produções independentes no mercado cinematográfico/audiovisual desde 2018.</p>
+    </section>
+
+    
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfólio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" onclick="showImageGallery(['imagens/Lana (1).png', 'imagens/merosdetalhes/merdosdetalhes1.jpg'] )">
+                <img src="imagens/Lana (1).png" alt="Projeto 1" class="portfolio-image Lana">
+                <img src="imagens/merosdetalhes/" alt="">
+                <div class="portfolio-details">
+                    <h3>Meros Detalhes</h3>
+            
+                    <p>Baseado na autoaceitação física e mental que precisa ser conquistada pela a maior parte de jovens na atualidade. Meros Detalhes busca abrir um espaço de troca e auto descoberta de cinco mulheres em frente ao espelho, seus processos, seus traumas e seu amor próprio.</p>
+                    <h5>Produtora Executiva <br>
+                        Roterista e Diretora <br>
+                        Compositora e instrumentista</h5>
+                </div>
+            </div>
+
+            <div class="portfolio-item" onclick="showDetails(2)">
+                <img src="tempotormento/IMG_7889.JPG" alt="Projeto 2" class="portfolio-image merosdetalhes">
+                <div class="portfolio-details">
+                    <h3>Tempo Tormento</h3>
+                    <p>Cecília, uma jovem escritora em busca de inspiração, encontra orientação inesperada de Emily Dickinson para seu bloqueio criativo e reavivar sua paixão pela poesia, embarcando em uma jornada onírica de palavras e memórias.</p>
+                    <h5>Trilha sonora <br>
+                </div>
+            </div>
+
+            <div class="portfolio-item" onclick="showDetails(2)">
+                <video width="360" height="250" controls>
+                    <source src="inquietude/WhatsApp Video 2023-11-04 at 10.35.07 AM.mp4" type="video/mp4">
+                </video>
+                <div class="portfolio-details">
+                    <h3>Inquietude</h3>
+                    <h5>Direção, atuação, edição e montagem e a trilha sonora.</h5>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="cristal/WhatsApp Image 2023-10-09 at 11.48.46.jpeg" alt="Projeto 2" class="portfolio-image merosdetalhes">
+                <div class="portfolio-details">
+                    <h3>Cristal Modulado</h3>
+                    <p>VÍDEO CLIP REALIZADO PARA AS DISCIPLINAS DE EDIÇÃO E MONTAGEM II E PÓS-PRODUÇÃO E FINALIZAÇÃO NO CURSO DE BACHARELADO EM CINEMA E AUDIOVISUAL - Instituto Federal de Goiás - Cidade de Goiás.</p>
+                    <h5>Realização</h5>
+                    <a href="https://www.youtube.com/watch?v=mLdB9ITQ2TM" target="_blank" class="video-link-button">Assistir ao vídeo</a>
+                </div>
+            </div>
+            
+
+            
+            
+                </div>
+            
+                   
+                    
+                </div>
+            
+
+            
+    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <div id="lightbox" class="overlay">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="zoomed-image" src="" alt="Imagem em destaque">
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato pelo email: <a href="mailto:seuemail@example.com">gabrielatrindadecine@gmail.com</a></p>
+        <p>Entre em contato pelo número: <a href="tel:+5562998260140">62 99826-0140</a></p>
+
+    </section>
+
+    <div class="project-details" id="project-details-1">
+        <h2>Projeto 1</h2>
+        <p>Detalhes do Projeto 1.</p>
+    </div>
+
+    <div class="project-details" id="project-details-2">
+        <h2>Projeto 2</h2>
+        <p>Detalhes do Projeto 2.</p>
+    </div>
+    <audio controls autoplay loop>
+        <source src="audiomusic/MEROS DETALHES_08.wav" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    
+    <p style="color: white;">Trilha sonora por: Gabi Trindade</p>
+
+    <footer>
+        <p>&copy; Gabriela Trindade</p class= "audiogabi">
+    </footer>
+
+    <script src="estilizar.js"></script>
+</body>
+</html>
